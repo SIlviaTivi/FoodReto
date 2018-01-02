@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body class="background-splash">
+    <h1>FOODMAP</h1>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="dropdown">
+          <img hidden id="mxmap" src="../assets/images/mapa.jpg" class="img-responsive mxmap" alt="logo">
+        </div>
+      </div>
+    </div>
+
+    <h2>Comida cerca de ti</h2>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="form-group center">
+         <input id="search" type="input" name="" value="" placeholder="Tipo de comida">
+           <span class=" glyphicon glyphicon-search"></span>
+        </div>
+      </div>
+    </section>
+      <!-- RESTAURANTES EN IMAGENES -->
+      <!-- comida mexicana -->
+    <section class="container-fluid">
+      <div class="row">
+        <div id="imgMx" class="imgRest img-restaurants col-xs-12">
+          <!-- imagenes de restaurantes para modal-->
+          <div  id="elTorito" class="rest restMx col-xs-4 " type="button" data-toggle="modal" data-target="#modalMx1" hidden>
+            <a href="#"><span hidden class="contex">El Torito</span><img class="img-into" src="../assets/images/el-torito-img.jpg" alt=""></a>
+          </div>
+          <div id="chingaTuTaco" class="rest restMx col-xs-4" type="button" data-toggle="modal" data-target="#modalMx2" hidden>
+            <a href="#"><span hidden class="contex">Chinga tu taco</span><img class="img-into" src="../assets/images/chinga-tu-taco-img.jpg" alt=""></a>
+          </div>
+          <div id="tacoNaco" class="rest rest restMx col-xs-4" type="button" data-toggle="modal" data-target="#modalMx3" hidden>
+            <a href="#"><span hidden class="contex">Taco Naco</span><img class="img-into" src="../assets/images/taco-naco-img.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- comida vegana -->
+  <section class="container-fluid">
+    <div class="row">
+      <div id="imgVgn" class="imgRest img-restaurants col-xs-12">
+        <!-- imagenes de restaurantes para modal-->
+        <div id="abdielVegan" class="rest restVgn col-xs-4" type="button" data-toggle="modal" data-target="#modalVgn1" hidden>
+          <a href="#"><span hidden class="contex"> Abdiel Vegan </span><img class="img-into" src="../assets/images/abdiel-vegan-img.jpg" alt=""></a>
+        </div>
+        <div id="elParaisoDeLaSalud" class="rest restVgn col-xs-4" type="button" data-toggle="modal" data-target="#modalVgn2" hidden>
+          <a href="#"><span hidden class="contex" >El Paraiso de la Salud</span><img class="img-into" src="../assets/images/el-paraiso-de-la-salud-img.jpg" alt=""></a>
+        </div>
+        <div id="saborYvida" class="rest restVgn col-xs-4" type="button" data-toggle="modal" data-target="#modalVgn3" hidden>
+          <a href="#"><span hidden class="contex" >Sabor y Vida</span><img class="img-into" src="../assets/images/sabor-y-vida-img.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- comida japonesa -->
+  <section class="container-fluid">
+    <div class="row">
+      <div id="imgJap" class="imgRest img-restaurants col-xs-12">
+        <!-- imagenes de restaurantes para modal-->
+        <div id="kintaroRestaurant" class="rest restJap col-xs-4" type="button" data-toggle="modal" data-target="#modalJap1" hidden>
+          <a href="#"><span hidden class="contex" >Kintaro Restaurant</span><img class="img-into" src="../assets/images/kintaro-restaurant-img.jpg" alt=""></a>
+        </div>
+        <div id="osaka" class="rest restJap col-xs-4" type="button" data-toggle="modal" data-target="#modalJap2" hidden>
+          <a href="#"><span hidden class="contex" >Osaka</span><img class="img-into" src="../assets/images/osaka-img.jpg" alt=""></a>
+        </div>
+        <div id="taikeSushiLounge" class="rest restJap col-xs-4" type="button" data-toggle="modal" data-target="#modalJap3" hidden>
+          <a href="#"><span hidden class="contex">Taike Sushi Lounge</span><img class="img-into" src="../assets/images/taike-sushi-lounge-img.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- MODALES -->
+        <!-- modales comida mexicana -->
+  <section>
+
+
+    <div class="modal-1 modal fade" id="modalMx1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-content">
+          <img class="data-img-rest" src="../assets/images/el-torito-data.jpg" alt="">
+       </div>
+     </div>
+     <div class="modal-1 modal fade" id="modalMx2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-content">
+           <img class="data-img-rest" src="../assets/images/chinga-tu-taco-data.jpg" alt="">
+        </div>
+      </div>
+      <div class="modal-1 modal fade" id="modalMx3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-content">
+            <img class="data-img-rest" src="../assets/images/taco-naco-data.jpg" alt="">
+         </div>
+       </div>
+       <!-- modales comida vegana -->
+     <div class="modal-1 modal fade" id="modalVgn1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal-content">
+           <img class="data-img-rest" src="../assets/images/abdiel-vegan-data.jpg" alt="">
+        </div>
+      </div>
+      <div class="modal-1 modal fade" id="modalVgn2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-content">
+            <img class="data-img-rest" src="../assets/images/el-paraiso-de-la-salud-data.jpg" alt="">
+         </div>
+       </div>
+       <div class="modal-1 modal fade" id="modalVgn3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-content">
+             <img class="data-img-rest" src="../assets/images/sabor-y-vida-data.jpg" alt="">
+          </div>
+        </div>
+        <!-- modales comida japonesa -->
+      <div class="modal-1 modal fade" id="modalJap1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-content">
+            <img class="data-img-rest" src="../assets/images/kintaro-restaurant-data.jpg" alt="">
+         </div>
+       </div>
+       <div class="modal-1 modal fade" id="modalJap2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-content">
+             <img class="data-img-rest" src="../assets/images/osaka-data.jpg" alt="">
+          </div>
+        </div>
+        <div class="modal-1 modal fade" id="modalJap3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-content">
+              <img class="data-img-rest" src="../assets/images/taike-sushi-lounge-data.jpg" alt="">
+           </div>
+         </div>
+
+  </section>
+
+    <script src="../vendors/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/foodmap.js" type="text/javascript" charset="utf-8"></script>
+      <!-- <script src="js/signup-form.js" type="text/javascript" charset="utf-8"></script> -->
+  </body>
+</html>

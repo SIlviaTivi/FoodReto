@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:#21201d;
+  color:#ac5219;
+}
+body{
+  font-family: ;
+  color: ;
+}
+.container-flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+.container-flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+.vh100{
+  height: 100vh;
+}
+
+.background{
+  background-image: url("../assets/images/prueba2.jpg");
+  background-repeat: none;
+  background-position: 0;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+
+}
+
+.background-splash{
+  background-color:#21201d;
+  background-repeat: none;
+  background-position: 0;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color:#ac5219;
+}
+
+
+
+/*----------HTMLfoodmap---------*/
+.img-restaurants{
+display: inline-block;
+}
+
+.img-into{
+  width:100%;
+  display: inline-block;
+}
+
+
+}
+.center{
+  text-align: center;
+}
