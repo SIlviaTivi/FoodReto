@@ -1,56 +1,32 @@
+$(document).ready(function() {
+console.log(data)
 
-$(function() {
-  var $search = $('#search');
-  var search = ['comida', 'mexicana', 'vegana', 'japonesa'];
-  var $rest = $('.rest');
-  var $contex = $('.contex');
+  var numeros = [{clave: 'mexico', valor:10}, 
+                {clave:'chile', valor:20}, 
+                {clave:'peru', valor: 30}];
+                
+var dobles  = numeros.map(function(num) {
+  
+$('.content').append(`<p> ${num.clave}</p>`)
+ 
+  console.log(num.clave);
+});
 
-  // Funcion search--
-  $search.on('input', function(event) {
-    event.preventDefault();
-    search;
-    // valor del search mayor a 3 digitos
-    if ($(this).val().length >= 3) {
-      var searchVal = $(this).val();
-      console.log(searchVal);
-    }
-    // limpiar filtros
-    if ($(this).val() === '') {
-      $('.restMx').attr('hidden', true);
-      $('.restVgn').attr('hidden', true);
-      $('.restJap').attr('hidden', true);
-    }
-    // Filtro el valor del search (filt)
-    function filterItems(filt) {
-      return search.filter(function(el) {
-        return el.toLowerCase().indexOf(filt.toLowerCase()) > -1;
-      // return el.indexOf(filt) > -1;
+
+    $("#search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $('.content p').filter(function(){
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
       });
-    }
-    var valObj = filterItems(searchVal); // encaje
-    //    console.log(filterItems(searchVal)); // ['array1', 'array2']
+      console.log( $('.content p'));
+     
+    });
 
-    for (var i = 0; i <= valObj.length; i++) {
-      console.log(valObj[i]);
-      console.log(valObj[i].includes('mexicana'));
+    });
 
-      if (valObj[i].includes('mexicana')) {
-        $('.restMx').attr('hidden', false);
-      } else if (valObj[i].includes('vegana')) {
-        $('.restVgn').attr('hidden', false);
-      } else if (valObj[i].includes('japonesa')) {
-        $('.restJap').attr('hidden', false);
-      } else if (valObj[i].includes('comida')) {
-        $('.restMx').attr('hidden', false);
-        $('.restVgn').attr('hidden', false);
-        $('.restJap').attr('hidden', false);
-      }
-    }
-  });
-
-  $rest.on('mouseover', function(event) {
+/*   $rest.on('mouseover', function(event) {
     event.preventDefault();
     $(this).attr('hidden', false);
     console.log();
-  });
-});
+  }); */
+
